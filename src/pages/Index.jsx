@@ -4,7 +4,7 @@ const Index = () => {
 
     return (
         <div>
-          Home page services
+          Index principal
         </div>
     );
 };
