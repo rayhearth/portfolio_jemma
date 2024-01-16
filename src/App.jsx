@@ -1,6 +1,4 @@
-import { useState } from 'react'
-
-import './App.css'
+import { useState } from 'react';
 
 import { Outlet } from 'react-router-dom';
 import Header from './components/layout/Header';
@@ -12,9 +10,9 @@ function App() {
 
   return (
     <>
-      {/* <Header/>
+      <Header/>
       <Outlet/>
-      <Footer/> */}
+      <Footer/>
     </>
   )
 }
