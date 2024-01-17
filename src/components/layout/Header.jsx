@@ -12,6 +12,8 @@ const Header = () => {
 
     return (
         <header className='header main'>
+            <div className="site-border">
+
             <nav className="main-nav">
                 <ul className='linkContent'>
                     <li className="main-nav-item" onClick={home}>
@@ -30,6 +32,7 @@ const Header = () => {
                 </ul>
                 
             </nav>
+            </div>
         </header>
     );
 };
