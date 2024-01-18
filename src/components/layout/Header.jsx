@@ -1,40 +1,52 @@
-import React from 'react';
+import React, { useState } from "react";
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+	const [isOpen, setIsOpen] = useState(false);
 
-    let navigate = useNavigate()
-    const home = () => { navigate('/home') }
-    const about = () => { navigate('/about') }
-    const projets = () => { navigate('/projets') }
-    const contact = () => { navigate('/contact') }
+	const handleIsOpen = () => {
+		setIsOpen(!isOpen);
+	};
 
-    return (
-        <header className='header main'>
-            <div className="site-border">
+	let navigate = useNavigate();
+	const home = () => {
+		navigate("/home");
+	};
+	const about = () => {
+		navigate("/about");
+	};
+	const projets = () => {
+		navigate("/projets");
+	};
+	const contact = () => {
+		navigate("/contact");
+	};
 
-            <nav className="main-nav">
-                <ul className='linkContent'>
-                    <li className="main-nav-item" onClick={home}>
-                        Home
-                    </li>
-                    <li className="main-nav-item" onClick={about}>
-                        Qui-suis je ?
-                    </li>
-                    <li className="main-nav-item" onClick={projets}>
-                        Projets
-                    </li>
-                    <li className="main-nav-item" onClick={contact}>
-                        Contact
-                    </li>
+	return (
+		<header className="header main">
+			<nav className={`nav ${isOpen ? "is-open" : "close-nav"}`} id="nav">
+				<ul className="linkContent">
+					<li className="main-nav-item" onClick={home}>
+						Home
+					</li>
+					<li className="main-nav-item" onClick={about}>
+						Qui-suis je ?
+					</li>
+					<li className="main-nav-item" onClick={projets}>
+						Projets
+					</li>
+					<li className="main-nav-item" onClick={contact}>
+						Contact
+					</li>
+				</ul>
+			</nav>
 
-                </ul>
-                
-            </nav>
-            </div>
-        </header>
-    );
+			<button className="burger" onClick={handleIsOpen}>
+				<span></span>
+			</button>
+		</header>
+	);
 };
 
 export default Header;
