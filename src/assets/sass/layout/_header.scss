@@ -1,10 +1,9 @@
 header {
 	display: flex;
-	justify-content: flex-end; 
+	justify-content: flex-end;
 }
 nav {
-    position: fixed;
-	width: 100%;
+	position: fixed;
 	height: 80px;
 	top: 0;
 	background-color: #111;
@@ -17,7 +16,7 @@ nav {
 		align-items: center;
 		li {
 			display: block;
-            cursor: pointer;
+			cursor: pointer;
 			font-size: 20px;
 			text-align: center;
 			color: white;
@@ -29,9 +28,11 @@ nav {
 	}
 }
 
-@media screen and (max-width: 960px){
-    nav{
-        height: 100vh;
+@media screen and (max-width: 960px) {
+	nav {
+		justify-content: center;
+		height: 100vh;
+		width: 100%;
 		background-color: rgba(17, 17, 17, 0.9);
 		transform: translateY(-100%);
 		transition: all 0.3s ease-in-out;
@@ -56,8 +57,8 @@ nav {
 				}
 			}
 		}
-    }
-    .is-open{
-        transform: translateY(100%);
-    }
+	}
+	.is-open {
+		transform: translateY(100%);
+	}
 }
