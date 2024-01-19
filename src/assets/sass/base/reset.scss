@@ -1,58 +1,58 @@
 /*****RESET*****/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 #root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 html {
-    font-family: $comfortaa, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	font-family: $comfortaa, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-    // background: rgb(235, 213, 177);
-    // background: #071C33;
-    // color: #A8765F;
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	background: rgb(235, 213, 177);
+	background: #071c33;
+	color: #a8765f;
 }
 
 h1,
 h2,
 h3 {
-    font-family: $font-1;
-    font-size: 3em;
+	font-family: $font-1;
+	font-size: 3em;
 }
 
 ul,
 ol,
 li {
-    margin: 0;
-    padding: 0;
-    text-indent: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	list-style: none;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 input {
-    margin: 0;
-    padding: 0;
-    background: none;
-    border: none;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    text-align: inherit;
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	text-align: inherit;
 }
